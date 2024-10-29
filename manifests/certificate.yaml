@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: html-gitlab-amm-4cc090d2-2c86-4ab5-881a-18d2aa37873a-certificate
+  namespace: html-gitlab-amm-4cc090d2-2c86-4ab5-881a-18d2aa37873a
+spec:
+  secretName: html-gitlab-amm-4cc090d2-2c86-4ab5-881a-18d2aa37873a-secret-tls
+  commonName: sovannlyna-html-gitlab-amm.assessify.org
+  dnsNames:
+  - sovannlyna-html-gitlab-amm.assessify.org
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
